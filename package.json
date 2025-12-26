@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "remixicon": "^4.7.0",
+    "tailwindcss": "^4.1.18"
+  }
+}
