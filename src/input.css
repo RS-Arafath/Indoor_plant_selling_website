@@ -76,7 +76,7 @@ h1 {
   @apply text-3xl md:text-4xl xl:text-5xl font-bold
 }
 
-/* --button-- */
+/* --button--- */
 
 .btn {
   @apply border-yellow-500 bg-yellow-500 rounded-md px-5 py-2 duration-300;
