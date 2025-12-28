@@ -55,6 +55,11 @@
 
 }
 
+html {
+  @apply overflow-x-hidden scroll-smooth
+}
+
+
 body {
   @apply bg-green-950 text-white font-Jost tracking-wide
 }
@@ -64,6 +69,11 @@ body {
 }
 
 .nav-link:hover {
+  @apply text-yellow-500
+}
+
+/* --active button */
+.active {
   @apply text-yellow-500
 }
 

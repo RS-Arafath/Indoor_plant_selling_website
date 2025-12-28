@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth md:scroll-auto">
 
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IndoorPlants</title>
 
     <!-- --------css link---------- -->
     <link rel="stylesheet" href="./output.css">
@@ -35,7 +35,7 @@
 
   </head>
 
-  <body>
+  <body">
 
     <!-- ---------header--------- -->
 
@@ -462,7 +462,7 @@
       <!-- --review-- -->
       <section id="review" class="relative mb-20 md:mb-28 overflow-hidden">
         <div class="absolute -top-8 -left-12 opacity-50">
-          <img src="img/leaf-4.png" alt="leaf-image" class="w-40  md:w-52 xl:w-64">
+          <img src="/img/leaf-4.png" alt="leaf-image" class="w-40  md:w-52 xl:w-64">
         </div>
         <div class="flex flex-col items-center gap-3 text-center mb-10 md:mb-20">
           <h2 class="title">Customer Review</h2>
@@ -591,28 +591,118 @@
 
       <!-- ----footer--- -->
       <footer class="bg-yellow-100 pt-20 pb-10 md:pt-28 relative text-green-950">
+
         <!-- --newsletter--- -->
-        <div class="container">
-          <div>
-            <h3><span class="text-yellow-500 text-5xl">Subscribe</span> to our newsletter
-              Subscribe
+        <div class="container text-white absolute top-0 right-0 left-0 -translate-y-1/2">
+          <div class="bg-green-900 px-10 pt-5 pb-10 space-y-5 rounded-md">
+            <h3><span class="text-yellow-500 ">Subscribe</span> to our newsletter
             </h3>
 
-            <div>
-              <input type="email" placeholder="Your Email Addres">
-              <button>
-                <span>Subscribe</span>
-                <i class="ri-send-plane-fill"></i>
+            <div class="flex flex-col md:flex-row gap-1">
+              <input type="email" placeholder=" Entire Your Email Addres"
+                class="w-full px-5 py-3 text-green-900 bg-white rounded-md outline-none ">
+              <button class="flex  items-center justify-center gap1 bg-green-950 px-5vpy3
+               rounded-md hover:opacity-90 hover:text-amber-300 duration-300
+              ">
+                <span class="p-1">Subscribe</span>
+                <i class="ri-send-plane-2-fill p-1"></i>
               </button>
             </div>
           </div>
         </div>
 
+        <!-- ---social icon--- -->
+        <div class="container mt-16 mb-10">
+          <div class="border-b border-green-500 relative">
+            <div class="absolute top-0 transform -translate-y-1/2 left-0 right-0 max-w-36 mx-auto">
+              <div class="bg-yellow-100 text-lg text-center space-x-2 ">
+                <i class="ri-twitter-x-line  hover:text-yellow-500 duration-300 cursor-pointer text-base"></i>
+                <i class="ri-instagram-line hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                <i class="ri-facebook-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+                <i class="ri-linkedin-fill hover:text-yellow-500 duration-300 cursor-pointer"></i>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <!-- ---content--- -->
+        <div
+          class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 text-center md:text-start">
+          <!-- item 1 -->
+          <div>
+            <div class="text-7xl text-green-700 text-center inline-block">
+              <i class="ri-leaf-fill"></i>
+              <p class=" font-Lobster text-xl sm:text-2xl">IndorePlants.
+              </p>
+            </div>
+          </div>
+
+          <!-- item 2 -->
+          <div>
+            <p class="mb-5 font-bold text-xl">Quick Link</p>
 
 
+            <div class="flex flex-col gap-1">
 
+              <a href="#">Plants</a>
+              <a href="#">Flowers</a>
+              <a href="#">Gerdening</a>
+              <a href="#">Seeds</a>
+              <a href="#">Shipping</a>
+            </div>
+          </div>
+
+
+          <!-- item 3 -->
+          <div>
+            <p class="mb-5 font-bold text-xl">Popular Services</p>
+
+
+            <div class="flex flex-col gap-1">
+
+              <a href="#">Tree Planting</a>
+              <a href="#">Grass Cutting</a>
+              <a href="#">Weeds Control</a>
+              <a href="#">Project</a>
+            </div>
+          </div>
+
+
+          <!-- item 4 -->
+          <div>
+            <p class="mb-5 font-bold text-xl">Contact Us</p>
+
+
+            <div class="flex flex-col gap-1">
+
+              <a href="tel:+880 15 767 430 55">+880 157 674 3055 </a>
+              <a href="mailto:contact.arafath.bd@gmail.com">contact.arafath.bd@gmail.com</a>
+              <br>
+              <p>1234 Tailwind Ave, CSS City, Webland 56789, USA
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="container">
+          <p class="text-center mt-10 opacity-50">Copyright &copy; 2024 RS-Arafath. All rights reserved.
+          </p>
+        </div>
+
+        <!-- floral image -->
+        <div class="absolute bottom-0 left-0 opacity-20 pointer-events-none">
+          <img src="/img/floral-1.png" alt="floral_img" class="w-full lg:w-1/2">
+        </div>
       </footer>
 
+      <!-- -------scrool up--------- -->
+      <a href="#" id="scroll-up"
+        class="fixed right-4 -bottom-1/2 bg-yellow-500 shadow-sm inline-block px-3 md:px-4 md:py-2 rounded-md text-lg z-50 hover:-translate-y-1 duration-300">
+        <i class="ri-arrow-up-line"></i>
+
+      </a>
 
 
 
@@ -633,11 +723,11 @@
 
 
     <!-- ------------mainjs------------- -->
-    <script src="/main.js"></script>
+    <script src="./main.js"></script>
 
 
 
 
-  </body>
+    </body>
 
 </html>
